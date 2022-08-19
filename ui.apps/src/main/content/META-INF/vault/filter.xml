@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/pnb/clientlibs"/>
+    <filter root="/apps/pnb/components"/>
+    <filter root="/apps/pnb/i18n"/>
+</workspaceFilter>
