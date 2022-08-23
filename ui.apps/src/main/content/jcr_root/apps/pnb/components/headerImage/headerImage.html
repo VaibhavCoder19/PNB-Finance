@@ -1,0 +1,14 @@
+
+<sly data-sly-test="${wcmmode.edit && !resource.listChildren}">
+    <div class="cq-placeholder cq-marker-start" data-emptytext="Pathfield"></div>
+</sly>
+
+    <sly data-sly-use.model="com.adobe.core.models.HeaderImageModel"></sly>
+    <sly data-sly-list.child="${model.imageDetails}">
+        <div class="horizontal">
+        <a href="${child.linkUrl}">
+            <img src="/content/dam/pnb/${child.fileName}/jcr:content/renditions/cq5dam.thumbnail.319.319.png"/>
+        </a>
+        </div>
+    </sly>
+
