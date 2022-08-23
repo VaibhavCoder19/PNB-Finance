@@ -15,6 +15,11 @@ public class ImageDetailsModel {
     @ValueMapValue
     private String linkUrl;
 
+    @ValueMapValue
+    private int imageheight;
+
+    @ValueMapValue
+    private int imagewidth;
 
     public String getLinkUrl() {
         return linkUrl;
@@ -22,5 +27,13 @@ public class ImageDetailsModel {
 
     public String getFileName() {
         return fileName;
+    }
+
+    public int getImageheight() {
+        return imageheight;
+    }
+
+    public int getImagewidth() {
+        return imagewidth;
     }
 }

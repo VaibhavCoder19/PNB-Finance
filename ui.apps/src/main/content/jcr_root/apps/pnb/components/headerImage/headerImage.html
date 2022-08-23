@@ -7,7 +7,7 @@
     <sly data-sly-list.child="${model.imageDetails}">
         <div class="horizontal">
         <a href="${child.linkUrl}">
-            <img src="/content/dam/pnb/${child.fileName}/jcr:content/renditions/cq5dam.thumbnail.319.319.png"/>
+            <img src="/content/dam/pnb/${child.fileName}/jcr:content/renditions/cq5dam.thumbnail.319.319.png" height="${child.imageheight}px" width="${child.imagewidth}px"/>
         </a>
         </div>
     </sly>

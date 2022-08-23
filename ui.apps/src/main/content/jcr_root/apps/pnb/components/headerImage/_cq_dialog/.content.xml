@@ -70,6 +70,33 @@
                                                     filedDescription="Select Link Path"
                                                     filedLabel="Link Url"
                                                     name="./linkUrl"/>
+
+                                                <height
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Image Height"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <title
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Image Height"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                name="./imageheight"/>
+                                                    </items>
+                                                </height>
+
+                                                <width
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Image Width"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <title
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Image Width"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                name="./imagewidth"/>
+                                                    </items>
+                                                </width>
+
                                             </items>
                                         </field>
                                     </multifieldcollection>
