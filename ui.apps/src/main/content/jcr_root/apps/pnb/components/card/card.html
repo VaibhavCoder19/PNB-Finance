@@ -1,0 +1,30 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+ data-sly-call="${clientlib.all @ categories='cq.authoring.card'}"
+/>
+
+
+<div class="control-width">
+<a href="${properties.linkUrl}.html" class="remove">
+<div id="myCard">
+
+	<div id="img">
+		<img src="/content/dam/pnb/${properties.fileName}/jcr:content/renditions/cq5dam.thumbnail.319.319.png"/>
+	</div>
+
+	<h1></h1>
+
+	<div id="text">
+
+		<sly data-sly-test="${properties.imagetitle}" >
+       		<h3 id = "title">${properties.imagetitle}</h3>
+		</sly>
+
+		<sly data-sly-test="${properties.imagedesc}">
+       		<h4 id = "desc">${properties.imagedesc}</h4>
+		</sly>
+
+	</div>
+
+</div>
+</a>
+</div>

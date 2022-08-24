@@ -1,0 +1,44 @@
+.remove{
+	text-decoration:none;
+}
+
+.control-width{
+	width: 20%;
+}
+
+#myCard{
+	background-color: rgb(220,220,220);
+    height: 80px;
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+}
+
+#myCard h2{
+
+  color: red;
+}
+
+#text{
+	padding-left: 20px;
+    padding-right:10px;
+}
+
+#desc{
+	color:red;
+    margin-top: 0px;
+}
+
+#title{
+    margin-top:0px;
+	color: black;
+	margin-bottom:0px;
+}
+
+#myCard:hover{
+	background:#FFBF00;
+}
+
+#img{
+	margin-top:15px;
+}
