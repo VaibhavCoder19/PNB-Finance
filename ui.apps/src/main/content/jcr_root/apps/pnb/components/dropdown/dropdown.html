@@ -1,0 +1,13 @@
+<sly data-sly-test="${wcmmode.edit && !resource.listChildren}">
+    <div class="cq-placeholder cq-marker-start" data-emptytext="Drop Down List"></div>
+</sly>
+
+<sly data-sly-use.model="com.adobe.core.models.DropDownModel"/>
+<div id="topic"><h2>${properties.title}</h2></div>
+<div id="drop-list">
+<sly data-sly-list.field="${model.list}">
+    <div>
+    <a id="drop-link" href="http://localhost:4502${field.path}.html">${field.innerTitle}</a>
+    </div>
+</sly>
+</div>

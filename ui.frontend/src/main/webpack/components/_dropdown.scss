@@ -1,0 +1,17 @@
+#topic{
+    transition: height 3s;
+    cursor: pointer;
+    &:hover+#drop-list{
+        height:auto;
+        overflow: hidden;
+    }
+}
+#drop-list{
+    height:0;
+    overflow:hidden;
+    background-color:yellow;
+    position: absolute;
+}
+#drop-link{
+    color:black;
+}

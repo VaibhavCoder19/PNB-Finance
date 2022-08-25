@@ -1,0 +1,9 @@
+<sly data-sly-test="${wcmmode.edit && !resource.listChildren}">
+    <div class="cq-placeholder cq-marker-start" data-emptytext="Links"></div>
+</sly>
+
+<sly data-sly-use.model="com.adobe.core.models.LinkerModel"/>
+<sly data-sly-list.field="${model.list}">
+    <a href="http://localhost:4502${field.path}.html">${field.title}</a>
+</sly>
+

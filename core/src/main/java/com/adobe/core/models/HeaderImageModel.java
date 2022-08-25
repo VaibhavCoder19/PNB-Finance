@@ -7,7 +7,6 @@ import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.PostConstruct;
-import javax.mail.Header;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
@@ -25,7 +24,7 @@ public class HeaderImageModel {
     Logger logger = LoggerFactory.getLogger(HeaderImageModel.class);
 
 
-    private List<ImageDetailsModel> imageDetails= new LinkedList<>();
+    private List<ImageDetails> imageDetails= new LinkedList<>();
 
     @PostConstruct
     void init(){
@@ -33,15 +32,16 @@ public class HeaderImageModel {
 //        imageDetails = new LinkedList<>();
         if(Objects.nonNull(items)){
             for(Resource item: items){
-                ImageDetailsModel imageModel = item.adaptTo(ImageDetailsModel.class);
+                ImageDetails imageModel = item.adaptTo(ImageDetails.class);
                 if(Objects.nonNull(imageModel)){
                     imageDetails.add(imageModel);
+                    logger.info(imageModel.getFileName());
                 }
             }
         }
     }
 
-    public List<ImageDetailsModel> getImageDetails() {
+    public List<ImageDetails> getImageDetails() {
         return imageDetails;
     }
 }
