@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>User Details</title>
+</head>
+<body>
+<h3>Fill in the Form</h3>
+
+<form action="/content/training/us/en/jcr:content.servlets" method="post">
+  <table>
+
+    <tr>
+      <td>Model ID:</td>
+      <td><input type="number" name="modelid" required/></td>
+    </tr>
+    <tr>
+      <td>Product ID:</td>
+      <td><input type="number" name="productid" required/></td>
+    </tr>
+
+    <tr>
+      <td>Warranty Start Date:</td>
+      <td><input type="date" name="startdate" required/></td>
+    </tr>
+
+    <tr>
+      <td>Warranty End Date:</td>
+      <td><input type="date" name="enddate" required/></td>
+    </tr>
+
+    <tr>
+      <td>Dealer ID:</td>
+      <td><input type="number" name="dealerid" required/></td>
+    </tr>
+
+  </table>
+
+  <input type="submit" value="Submit Details">
+
+</form>
+
+</body>
+</html>

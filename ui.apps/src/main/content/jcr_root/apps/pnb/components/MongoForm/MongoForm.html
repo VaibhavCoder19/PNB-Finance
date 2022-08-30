@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+<form action="#" onSubmit="callServlet(event)" id="src-form">
+    <label>NAME: </label>
+    <input type="text" id="name" name="name" placeholder="Name">
+    <label>LOCATION: </label>
+    <input type="text" id="location" name="location" placeholder="Location">
+    <label>MOBILE: </label>
+    <input type="text" id="mobile" name="mobile" placeholder="Mobile">
+    <label>EMAIL: </label>
+    <input type="text" id="email" name="email" placeholder="E-Mail">
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    function callServlet(event){
+    event.preventDefault();
+    let frm = document.getElementById("src-form");
+    console.log(frm[0].value,frm[1].value);
+    $.ajax({
+        url      : "/content/mongo-servlet.json.mongo",
+        type     : 'POST',
+        data     : {name : frm[0].value, location : frm[1].value, mobile : frm[2].value, email : frm[3].value},
+        success    : function(resultText){
+            console.log("Success");
+            console.log(resultText);
+        },
+        error : function(jqXHR, exception){
+            console.log('Error Occurred!!');
+
+        }
+    });
+  }
+</script>
